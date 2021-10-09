@@ -7,14 +7,9 @@
 	// $uri .= $_SERVER['HTTP_HOST'];
 	// header('Location: '.$uri.'/dashboard/');
 	// exit;
-	if(1==0){
-		echo "igual";
-	}else{
+	echo "modificado";
 ?>
 <?php
-
-	echo "o";
-}
 //$g=$_GET;
 //echo json_decode($_SERVER['REQUEST_METHOD']);
 //foreach($_GET as $key => $value){
