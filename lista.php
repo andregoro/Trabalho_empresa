@@ -7,7 +7,7 @@
 	// $uri .= $_SERVER['HTTP_HOST'];
 	// header('Location: '.$uri.'/dashboard/');
 	// exit;
-	echo "modificado";
+	echo "modificado de novo";
 ?>
 <?php
 //$g=$_GET;
