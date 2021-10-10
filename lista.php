@@ -1,13 +1,27 @@
 <?php
-	// if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-	// 	$uri = 'https://';
-	// } else {
-	// 	$uri = 'http://';
-	// }
-	// $uri .= $_SERVER['HTTP_HOST'];
-	// header('Location: '.$uri.'/dashboard/');
-	// exit;
-	echo "modificado de novo";
+
+# Substitua abaixo os dados, de acordo com o banco criado
+
+# O hostname deve ser sempre localhost 
+$hostname = "localhost";
+$user = "root";
+$password = "";
+$database = "estudo_trabalho";
+
+# Conecta com o servidor de banco de dados 
+$conn =new mysqli($hostname, $user, $password,$database);
+if ($conn->connect_error) {
+    die(' Erro na conexão ');
+}
+
+$sql = "select * from city"; //sql
+$result=$conn->query($sql);//
+
+while($row = $result->fetch_assoc()) {
+    echo $row["cityId"]."<br>";   
+}
+echo "Connected ok";
+
 ?>
 <?php
 //$g=$_GET;
